@@ -1,0 +1,18 @@
+XTerm.termName: xterm-256color
+XTerm.vt100.locale: true
+XTerm.vt100.metaSendsEscape: true
+XTerm.vt100.saveLines: 4096
+XTerm.vt100.geometry: 80x32
+<Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+XTerm.vt100.foreground: white
+XTerm.vt100.background: black
+XTerm.vt100.color0: rgb:28/28/28
+! ...
+XTerm.vt100.color15: rgb:e4/e4/e4
+
+XTerm.vt100.colorBDMode: true
+XTerm.vt100.colorBD: rgb:82/a4/d3
+XTerm.vt100.colorULMode: true
+XTerm.vt100.colorUL: rgb:e4/e4/e4
+XTerm.scaleHeight: 1.01
+xterm*borderWidth: 0
