@@ -1,4 +1,6 @@
-PS1="\[\033[01;37m\]\$? \$(if [[ \$? == 0 ]]; then echo \"\[\033[01;32m\]\342\234\223\"; else echo \"\[\033[01;31m\]\342\234\227\"; fi) $(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo '\[\033[01;32m\]\u@\h'; fi)\[\033[01;34m\] \w \$\[\033[00m\] "
+PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\] '
+
+[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
 
 trap 'printf "\e[0m" "$_"' DEBUG
 
@@ -12,4 +14,3 @@ done
 unset PSi
 unset i
 
-[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
